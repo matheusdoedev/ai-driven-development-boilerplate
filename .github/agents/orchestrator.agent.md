@@ -26,6 +26,7 @@ tools: [agent, todo]
 - Use `backend-developer` agent to write and implement services with business logic that satisfies the requirement spec.
 - Use `frontend-developer` agent to implement UI components and interactions that satisfy the requirement spec.
 - Use `ui-designer` agent to design UI components and layouts if a frontend application is being developed.
+- Use `devops-engineer` agent to implement CI/CD pipelines, infrastructure as code, and other DevOps-related tasks.
 
 ## Constraints/Guardrails
 
