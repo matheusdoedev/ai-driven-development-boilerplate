@@ -17,13 +17,13 @@ description: This prompt is used to develop new software features based on specs
   - The spec file must have a title, description, acceptance criteria, diagrams, and notes/assumptions sections.
 2. For each spec found:
   - Read the spec and reason about the implementation.
+  - Create a new branch in order to build the spec. Name it as feat/<spec-name> where <spec-name> is a descriptive name of the spec.
   - Identify which agents are necessary to implement the spec.
       - Use the `backend-developer` agent to write and implement services with business logic that satisfies the requirement spec.
       - Use the `frontend-developer` agent to implement UI components and interactions that satisfy the requirement spec.
       - Use the `ui-designer` agent to design UI components and layouts if a frontend application is involved.
       - Use the `devops-engineer` for DevOps related tasks (ci/cd configuration, infra as code, and more).
   - Break down the spec into smaller tasks and assign them to the appropriate agents.
-  - Create a new branch in order to build the spec. Name it as feat/<spec-name> where <spec-name> is a descriptive name of the spec.
   - Create/modified necessary services files and implement the spec using the appropriate agents.
   - After the spec is implemented, create a pull request to develop with a clear description of the changes made and how they satisfy the spec.
   - Alongside, move the spec file from .specs/backlog to .specs/done and add a note about the implementation in the spec file.
@@ -44,15 +44,15 @@ description: This prompt is used to develop new software features based on specs
 
 ### Technology stack
 
-- Use `angular` or `react` for frontend applications. Use `angular` for more complex applications, enterprise ones. And use `react` for simpler applications, MVPs, and prototypes.
-- Use `csharp` with .NET LTS version using webapi template for backend services.
-- Use `postgresql` as relational database in scenarios where I needed to store structured data, and use `mongodb` as non-relational database in scenarios where I need to store unstructured data.
-- Use `kubernetes` for container orchestration and `docker` for containerization.
-- Use `grafana` and `prometheus` for monitoring and observability.
-- Use `git` for version control and `github` for repository hosting and collaboration.
-- Use `github actions` for CI/CD pipelines.
-- Use `terraform` for infrastructure as code and `ansible` for configuration management.
-- Use `azure` as could provider.
+- Use `angular` or `react` skills for frontend applications. Use `angular` for more complex applications, enterprise ones. And use `react` for simpler applications, MVPs, and prototypes.
+- Use `csharp` skill with .NET LTS version using webapi template for backend services.
+- Use `postgresql` skill as relational database in scenarios where I needed to store structured data, and use `mongodb` skill as non-relational database in scenarios where I need to store unstructured data.
+- Use `kubernetes` skill for container orchestration and `docker` for containerization.
+- Use `grafana` and `prometheus` skills for monitoring and observability.
+- Use `git` skill for version control and `github` skill for repository hosting and collaboration.
+- Use `github actions` skill for CI/CD pipelines.
+- Use `terraform` skill for infrastructure as code and `ansible` skill for configuration management.
+- Use `azure` skill as could provider.
 
 ### Distributed System Architecture Approach
 

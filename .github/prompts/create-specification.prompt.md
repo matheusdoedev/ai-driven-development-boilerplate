@@ -45,6 +45,7 @@ Each spec must include the following sections:
 - Keep the document actionable and implementation-ready.
 - Prefer concrete requirements over vague descriptions.
 - Ensure the acceptance criteria can be used to validate completion.
+- Use `.specs/ARCHITECTURE.md` file to reason about system architecture.
 - Use Mermaid blocks with fenced code blocks, for example:
 
 ```mermaid
