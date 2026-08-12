@@ -3,17 +3,19 @@ agent: agent
 description: This prompt is used to create a new software specification for a requested feature, change, or initiative. The generated spec will be saved in the `.specs/backlog/` folder at the repository root.
 ---
 
-# Create a New Specification
+## Tasks
 
 Create a new software specification for the requested feature, change, or initiative.
 
-## Target location
+## Instructions
+
+### Target location
 
 - Create the new file in `.specs/backlog/` at the repository root.
 - Use a clear, descriptive filename in kebab-case, such as `user-authentication-flow.spec.md`.
 - If the request is ambiguous, choose a sensible name and note assumptions in the file.
 
-## Required content
+### Required content
 
 Each spec must include the following sections:
 
@@ -37,7 +39,7 @@ Each spec must include the following sections:
 5. Notes and assumptions
    - List any open questions, dependencies, or non-functional requirements.
 
-## Writing guidance
+### Writing guidance
 
 - Write in clear, professional product/specification language.
 - Keep the document actionable and implementation-ready.
@@ -52,7 +54,7 @@ flowchart TD
     C --> D[Response]
 ```
 
-## Output template
+### Output template
 
 Use this structure when creating the spec:
 
@@ -92,7 +94,8 @@ classDiagram
     }
 ```
 
-## Assumptions and Notes
+### Assumptions and Notes
+```md
 - <Assumption or dependency>
 - <Open question>
 ```

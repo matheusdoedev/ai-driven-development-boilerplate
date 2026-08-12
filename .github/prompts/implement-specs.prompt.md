@@ -3,12 +3,14 @@ agent: orchestrator
 description: This prompt is used to develop new software features based on specs inside .specs/backlog folder. The idea is to check for specs in .specs/backlog folder in root one, and then build them using the appropriate agents, and finally move the spec to .specs/done folder after the implementation is done.
 ---
 
-# Build Pending Specs
+## Task
 
 - This prompt is used in order to develop new software features based on specs inside .specs/backlog folder.
 - The idea is to check for specs in .specs/backlog folder in root one, and then build them using the appropriate agents, and finally move the spec to .specs/done folder after the implementation is done.
 
 ## Instructions
+
+### Workflow
 
 1. Search for specs in .specs/backlog folder in root one.
   - The spec file must be in markdown format and have a .spec.md extension (except for the template.spec.md, that is the template one).
@@ -19,6 +21,7 @@ description: This prompt is used to develop new software features based on specs
       - Use the `backend-developer` agent to write and implement services with business logic that satisfies the requirement spec.
       - Use the `frontend-developer` agent to implement UI components and interactions that satisfy the requirement spec.
       - Use the `ui-designer` agent to design UI components and layouts if a frontend application is involved.
+      - Use the `devops-engineer` for DevOps related tasks (ci/cd configuration, infra as code, and more).
   - Break down the spec into smaller tasks and assign them to the appropriate agents.
   - Create a new branch in order to build the spec. Name it as feat/<spec-name> where <spec-name> is a descriptive name of the spec.
   - Create/modified necessary services files and implement the spec using the appropriate agents.

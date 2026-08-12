@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: orchestrator
 description: "Use when: implementing a system architecture defined in .specs/ARCHITECTURE.md by creating the required services, app structure, and Kubernetes manifests to run the full solution together."
 ---
 
