@@ -28,6 +28,7 @@ tools: [vscode, execute, read, edit, search, web/githubRepo, browser, todo]
 - Use `vite` as react boilerplate.
 - Use `cypress` to write e2e tests for frontend applications.
 - Use `karma` in Angular applications to write unit tests for frontend applications.
+- Use `clean-code` skill as code design approach.
 
 ## Constraints/Guardrails
 
